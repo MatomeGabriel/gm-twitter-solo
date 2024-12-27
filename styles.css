@@ -31,6 +31,57 @@ body {
   height: 100vh;
 }
 
+.main-nav {
+  margin-bottom: 4px;
+}
+
+.logo-link:hover,
+.menu-link:hover {
+  background-color: rgba(231, 233, 234, 0.15);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.menu .active {
+  font-weight: 700;
+  border: none;
+}
+.menu-link,
+.post-link {
+  color: #e7e9ea;
+  font-size: 20px;
+  line-height: 1.2;
+  padding: 12px;
+  border-radius: 999px;
+}
+
+.menu-label {
+  margin: 0 16px 0 20px;
+}
+
+.post-box {
+  margin: 8px 0 4px 0;
+}
+.post-link {
+  background-color: #eff3f4;
+  color: #0f1419;
+  font-size: 17px;
+  font-weight: 700;
+  height: 50px;
+  width: 90%;
+}
+
+.post-link:hover {
+  background-color: #e1e1e1;
+  color: #0f1419;
+}
+
 /******************
  MAIN SECTION
 *****************/
