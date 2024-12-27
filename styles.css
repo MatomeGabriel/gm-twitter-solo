@@ -1,0 +1,40 @@
+/* GLOBAL RESET */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1325px;
+}
+html {
+  overflow: hidden;
+}
+body {
+  line-height: 1;
+  font-weight: 400;
+  height: 100vh;
+  background-color: #000;
+  scrollbar-width: thin;
+  scrollbar-color: #3e4144 #16181c;
+  color: #e7e9ea;
+}
+
+/******************
+ HEADER SECTION(SIDEBAR)
+*****************/
+.header {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+/******************
+ MAIN SECTION
+*****************/
+.main {
+  overflow-y: scroll;
+  height: 100vh;
+}
