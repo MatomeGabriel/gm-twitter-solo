@@ -29,6 +29,9 @@ body {
 .header {
   overflow-y: scroll;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .main-nav {
@@ -36,7 +39,8 @@ body {
 }
 
 .logo-link:hover,
-.menu-link:hover {
+.menu-link:hover,
+.account-btn:hover {
   background-color: rgba(231, 233, 234, 0.15);
 }
 
@@ -80,6 +84,60 @@ body {
 .post-link:hover {
   background-color: #e1e1e1;
   color: #0f1419;
+}
+
+.account {
+  margin: 12px 0;
+  width: 100%;
+}
+
+.account-btn {
+  color: #e7e9ea;
+  width: 100%;
+  border-radius: 999px;
+}
+
+.account-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.account-img-box {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 999px;
+  background-image: url("https://images.unsplash.com/photo-1531030874896-fdef6826f2f7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.account-img {
+  width: 100%;
+  display: block;
+}
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.account-name,
+.account-username {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.account-name {
+  font-weight: 700;
+  color: #e7e9ea;
+}
+
+.account-username {
+  color: #71767b;
 }
 
 /******************
