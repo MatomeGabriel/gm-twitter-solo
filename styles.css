@@ -27,14 +27,123 @@ body {
  HEADER SECTION(SIDEBAR)
 *****************/
 .header {
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-nav {
+  margin-bottom: 4px;
+}
+
+.logo-link:hover,
+.menu-link:hover,
+.account-btn:hover {
+  background-color: rgba(231, 233, 234, 0.15);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.menu .active {
+  font-weight: 700;
+  border: none;
+}
+.menu-link,
+.post-link {
+  color: #e7e9ea;
+  font-size: 20px;
+  line-height: 1.2;
+  padding: 12px;
+  border-radius: 999px;
+}
+
+.menu-label {
+  margin: 0 16px 0 20px;
+}
+
+.post-box {
+  margin: 8px 0 4px 0;
+}
+.post-link {
+  background-color: #eff3f4;
+  color: #0f1419;
+  font-size: 17px;
+  font-weight: 700;
+  height: 50px;
+  width: 90%;
+}
+
+.post-link:hover {
+  background-color: #e1e1e1;
+  color: #0f1419;
+}
+
+.account {
+  margin: 12px 0;
+  width: 100%;
+}
+
+.account-btn {
+  color: #e7e9ea;
+  width: 100%;
+  border-radius: 999px;
+}
+
+.account-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.account-img-box {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 999px;
+  background-image: url("https://images.unsplash.com/photo-1531030874896-fdef6826f2f7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.account-img {
+  width: 100%;
+  display: block;
+}
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.account-name,
+.account-username {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.account-name {
+  font-weight: 700;
+  color: #e7e9ea;
+}
+
+.account-username {
+  color: #71767b;
 }
 
 /******************
  MAIN SECTION
 *****************/
 .main {
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 100vh;
 }
