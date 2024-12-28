@@ -207,3 +207,14 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+
+/* Post */
+
+.post {
+  padding: 4px 16px 0 16px;
+  display: flex;
+  gap: 8px;
+  align-items: start;
+}
+
+/* Post Icons */
