@@ -27,7 +27,7 @@ body {
  HEADER SECTION(SIDEBAR)
 *****************/
 .header {
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -144,6 +144,6 @@ body {
  MAIN SECTION
 *****************/
 .main {
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 100vh;
 }
