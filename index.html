@@ -121,25 +121,52 @@
                     <a href="" class="btn btn-tab">Following</a>
                   </header>
                   <div class="post">
-                    <div class="account-img-box"></div>
-                    <div class="write-post-box">
+                    <div class="post-account-img">
+                      <div class="account-img-box"></div>
+                    </div>
+
+                    <div class="post-container">
                       <div class="post-form">
-                        <form action="">
+                        <form class="form" action="">
                           <input
-                            class=""
+                            class="form-control post-input"
                             placeholder="What is happening!"
                             type="text" />
                         </form>
                       </div>
-                      <div class="post-for"></div>
+                      <div class="post-for">
+                        <button class="btn btn-post-for">
+                          <i class="bi bi-globe-asia-australia"></i>
+                          <span>Everyone can reply</span>
+                        </button>
+                      </div>
                       <div class="post-icons">
-                        <div class="post-icon-box">
-                          <p>Icon 1</p>
-                          <p>Icon 2</p>
-                          <p>Icon 3</p>
-                          <p>Icon 4</p>
+                        <div class="post-icons-container">
+                          <button class="btn btn-small btn-post-icon">
+                            <i class="bi bi-image"></i>
+                          </button>
+                          <button class="btn btn-small btn-post-icon">
+                            <i class="bi bi-filetype-gif"></i>
+                          </button>
+                          <button class="btn btn-small btn-post-icon">
+                            <i class="bi bi-slash-square"></i>
+                          </button>
+                          <button class="btn btn-small btn-post-icon">
+                            <i class="bi bi-list-ul"></i>
+                          </button>
+                          <button class="btn btn-small btn-post-icon">
+                            <i class="bi bi-emoji-smile"></i>
+                          </button>
+                          <button class="btn btn-small btn-post-icon">
+                            <i class="bi bi-calendar-plus"></i>
+                          </button>
+                          <button disabled class="btn btn-small btn-post-icon">
+                            <i class="bi bi-geo-alt"></i>
+                          </button>
+
+                          <!-- GIF -->
                         </div>
-                        <a href="#" class="btn btn-small">Post</a>
+                        <a href="#" class="btn btn-small btn-post">Post</a>
                       </div>
                     </div>
                   </div>
