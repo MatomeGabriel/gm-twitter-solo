@@ -23,6 +23,9 @@ body {
   color: #e7e9ea;
 }
 
+.btn {
+  border: none;
+}
 /******************
  HEADER SECTION(SIDEBAR)
 *****************/
@@ -145,5 +148,177 @@ body {
 *****************/
 .main {
   overflow-y: auto;
+  overflow-x: hidden;
   height: 100vh;
+}
+
+/* Main Content */
+.main-content {
+  border: 1px solid #2f3336;
+  width: 100%;
+}
+
+/* Main Tabs */
+.main-tab {
+  border-bottom: 1px solid #2f3336;
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* adds blur similar to twitter app */
+  backdrop-filter: blur(10px);
+}
+/* Tab btn */
+.btn-tab {
+  font-size: 15px;
+  color: #71767b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50px;
+  border-radius: 0;
+  position: relative;
+  padding: 0 16px;
+  font-weight: 500;
+}
+
+.btn-tab:hover,
+.btn-tab:active {
+  background-color: rgba(231, 233, 234, 0.15);
+  /* color: #71767b; */
+}
+
+.btn-tab-active {
+  font-weight: 700;
+  color: #e7e9ea;
+}
+
+/* adds the underline stroke */
+.btn-tab-active::after {
+  content: "";
+  display: inline-block;
+  height: 4px;
+  width: 56px;
+  background-color: #1d9bf0;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Post */
+
+.post {
+  padding: 4px 16px 0 16px;
+  display: flex;
+  gap: 8px;
+  align-items: start;
+  justify-content: start;
+}
+
+/* Write Post Box */
+.post-container {
+  /* ensures that the post container takes the remaining of the space */
+  flex-grow: 1;
+}
+
+.post-account-img {
+  padding-top: 12px;
+}
+
+/* Post Form */
+.form {
+  padding: 12px 0;
+}
+.post-input,
+.post-input:focus {
+  background-color: #000;
+  border: none;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #e7e9ea;
+  padding: 2px 0;
+  box-shadow: none;
+}
+.post-input::placeholder {
+  color: #71767b;
+}
+
+/* Post for */
+
+.post-for {
+  padding-bottom: 12px;
+
+  border-bottom: 1px solid #2f3336;
+}
+.btn-post-for {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1d9bf0;
+  border: none;
+  padding: 1px 13px;
+  line-height: 1;
+}
+
+.btn-post-for:hover,
+.btn-post-for:active {
+  color: #1d9bf0;
+}
+
+.post-for .post-for i {
+  margin-right: 4px;
+  font-size: 13px;
+}
+
+/* Post Icons */
+
+.post-icons-container {
+  display: flex;
+  align-items: center;
+}
+.post-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.btn-post-icon,
+.btn-post-icon:hover,
+.btn-post-icon:active {
+  color: #1d9bf0;
+}
+.btn-post-icon,
+.btn-post-icon:hover {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.btn-post-icon i {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.btn.btn-post-icon:disabled {
+  color: #1d9bf0;
+  opacity: 0.6;
+}
+
+.btn-post {
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 999px;
+  background-color: #eff3f4;
+  color: #0f1419;
+}
+
+.btn-post:hover,
+.btn-post:active {
+  background-color: #e1e1e1;
+  color: #0f1419;
 }
