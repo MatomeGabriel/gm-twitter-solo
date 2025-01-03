@@ -23,29 +23,32 @@ body {
   color: #e7e9ea;
 }
 
-.btn {
-  border: none;
-}
-
 a {
   transition: all 0.3s;
+  outline: none;
 }
-a:hover {
+a:hover,
+button:hover {
   filter: brightness(0.95);
 }
 
-a:active {
+a:active,
+button:active,
+a:focus,
+button:focus {
   filter: brightness(0.85);
 }
+
 .tw-btn {
   text-decoration: none;
   border-radius: 999px;
   background-color: #eff3f4;
-  font-weight: 700;
   color: #0f1419;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
+  transition: all 0.3s;
 }
 
 .tw-btn-sm {
@@ -53,6 +56,7 @@ a:active {
   height: 36px;
   font-size: 15px;
   line-height: 1.2;
+  font-weight: 700;
 }
 
 .tw-btn-xm {
@@ -60,7 +64,47 @@ a:active {
   padding: 0 18px;
   font-size: 14px;
   line-height: 1.2;
+  font-weight: 700;
 }
+
+.tw-btn-lg {
+  background-color: #eff3f4;
+  color: #0f1419;
+  font-size: 17px;
+  font-weight: 700;
+  height: 50px;
+  width: 90%;
+  font-weight: 700;
+}
+
+.tw-btn-md-outline,
+.tw-btn-logo {
+  color: #e7e9ea;
+  font-size: 20px;
+  line-height: 1.2;
+  padding: 12px;
+  border-radius: 999px;
+  background-color: rgba(231, 233, 234, 0);
+}
+
+.tw-btn-logo {
+  display: inline-block;
+}
+
+.tw-btn-account {
+  color: #e7e9ea;
+  width: 100%;
+  border-radius: 999px;
+  background-color: transparent;
+  padding: 6px 12px;
+}
+
+.tw-btn-logo:hover,
+.tw-btn-md-outline:hover,
+.tw-btn-account:hover {
+  background-color: rgba(231, 233, 234, 0.15);
+}
+
 /******************
  GENERAL UTILITIES
 *****************/
@@ -112,31 +156,18 @@ p {
   margin-bottom: 4px;
 }
 
-.logo-link:hover,
-.menu-link:hover,
-.account-btn:hover {
-  background-color: rgba(231, 233, 234, 0.15);
-}
-
 .menu {
   list-style: none;
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
+  align-items: start;
 }
 
 .menu .active {
   font-weight: 700;
   border: none;
-}
-.menu-link,
-.post-link {
-  color: #e7e9ea;
-  font-size: 20px;
-  line-height: 1.2;
-  padding: 12px;
-  border-radius: 999px;
 }
 
 .menu-label {
@@ -146,41 +177,18 @@ p {
 .post-box {
   margin: 8px 0 4px 0;
 }
-.post-link {
-  background-color: #eff3f4;
-  color: #0f1419;
-  font-size: 17px;
-  font-weight: 700;
-  height: 50px;
-  width: 90%;
-}
-
-.post-link:hover {
-  background-color: #e1e1e1;
-  color: #0f1419;
-}
 
 .section-account {
   margin: 12px 0;
   width: 100%;
 }
 
-.account-btn {
-  color: #e7e9ea;
-  width: 100%;
-  border-radius: 999px;
-}
-
 .account-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-/* .account-img {
   width: 100%;
-  display: block;
-} */
+}
 
 .account-info {
   display: flex;
@@ -228,13 +236,14 @@ p {
   display: flex;
   position: sticky;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   /* adds blur similar to twitter app */
   backdrop-filter: blur(10px);
   z-index: 10;
 }
+
 /* Tab btn */
-.btn-tab {
+.tw-btn-tab {
   font-size: 15px;
   color: #71767b;
   display: flex;
@@ -246,21 +255,22 @@ p {
   position: relative;
   padding: 0 16px;
   font-weight: 500;
+  background-color: transparent;
 }
 
-.btn-tab:hover,
-.btn-tab:active {
+.tw-btn-tab:hover,
+.tw-btn-tab:active {
   background-color: rgba(231, 233, 234, 0.15);
   /* color: #71767b; */
 }
 
-.btn-tab-active {
+.tw-btn-tab-active {
   font-weight: 700;
   color: #e7e9ea;
 }
 
 /* adds the underline stroke */
-.btn-tab-active::after {
+.tw-btn-tab-active::after {
   content: "";
   display: inline-block;
   height: 4px;
@@ -330,21 +340,23 @@ p {
 .post-for {
   padding-bottom: 12px;
 }
-.btn-post-for {
+.tw-btn-post-for {
   font-size: 14px;
   font-weight: 700;
   color: #1d9bf0;
   border: none;
   padding: 1px 13px;
   line-height: 1;
+  background-color: transparent;
 }
 
-.btn-post-for:hover,
-.btn-post-for:active {
+.tw-btn-post-for:hover,
+.tw-btn-post-for:active {
   color: #1d9bf0;
 }
 
-.post-for .post-for i {
+.post-for .tw-btn-post-for i {
+  transform: translateY(12%);
   margin-right: 4px;
   font-size: 13px;
 }
@@ -362,43 +374,23 @@ p {
   padding: 8px 0;
 }
 
-.btn-post-icon,
-.btn-post-icon:hover,
-.btn-post-icon:active {
-  color: #1d9bf0;
-}
-.btn-post-icon,
-.btn-post-icon:hover {
+.tw-btn-post-icon {
   width: 35px;
   height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
+  background-color: transparent;
+  color: #1d9bf0;
 }
-.btn-post-icon i {
+.tw-btn-post-icon i {
   font-size: 16px;
   line-height: 1;
 }
 
-.btn.btn-post-icon:disabled {
-  color: #1d9bf0;
+.tw-btn-post-icon:disabled {
   opacity: 0.6;
-}
-
-.btn-post {
-  font-weight: 700;
-  font-size: 15px;
-  border-radius: 999px;
-  background-color: #eff3f4;
-  color: #0f1419;
-  padding: 6px 16px;
-}
-
-.btn-post:hover,
-.btn-post:active {
-  background-color: #e1e1e1;
-  color: #0f1419;
 }
 
 /* Post Info */
