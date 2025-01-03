@@ -9,6 +9,27 @@
 }
 .container {
   max-width: 1325px;
+  margin: 0 auto;
+}
+/* DO layouts */
+
+.account-box .account-name {
+  max-width: 150px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 200px;
+}
+.tw-col-1 {
+  max-width: 21.5%;
+  padding: 0;
+}
+
+.tw-col-2 {
+  max-width: 78.5%;
+}
+.row {
+  margin: 0 auto;
 }
 html {
   overflow: hidden;
