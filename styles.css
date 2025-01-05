@@ -7,12 +7,44 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
-  max-width: 1325px;
-  margin: 0 auto;
-}
-/* DO layouts */
 
+/* DO layouts */
+.tw-container {
+  /* min-width: 1240px; */
+}
+
+.tw-row {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.tw-col-1 {
+  flex-basis: 24.53%;
+}
+
+.tw-col-2 {
+  flex-basis: 75.47%;
+}
+
+.header {
+  /* width: 60%; 88px */
+  width: 275px;
+  justify-self: end;
+}
+
+.tw-row-justify {
+  gap: 30px;
+  width: 1050px;
+}
+
+.tw-col-3 {
+  flex-basis: 600px;
+}
+
+.tw-col-4 {
+  flex-basis: 350px;
+}
 .account-box .account-name {
   max-width: 150px;
   white-space: nowrap;
@@ -20,17 +52,7 @@
   overflow: hidden;
   width: 200px;
 }
-.tw-col-1 {
-  max-width: 21.5%;
-  padding: 0;
-}
 
-.tw-col-2 {
-  max-width: 78.5%;
-}
-.row {
-  margin: 0 auto;
-}
 html {
   overflow: hidden;
 }
@@ -44,6 +66,11 @@ body {
   color: #e7e9ea;
 }
 
+.main::-webkit-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 a {
   transition: all 0.3s;
   outline: none;
@@ -634,7 +661,8 @@ a.article-time:hover .time {
  ASIDE
 *****************/
 .side-content {
-  margin-right: 70px;
+  /* margin-right: 70px; */
+  padding-right: 10px;
 }
 .section-form {
   padding-top: 6px;
