@@ -8,43 +8,6 @@
   box-sizing: border-box;
 }
 
-/* DO layouts */
-.tw-container {
-  /* min-width: 1240px; */
-}
-
-.tw-row {
-  display: flex;
-  align-items: start;
-  justify-content: start;
-}
-
-.tw-col-1 {
-  flex-basis: 24.53%;
-}
-
-.tw-col-2 {
-  flex-basis: 75.47%;
-}
-
-.header {
-  /* width: 60%; 88px */
-  width: 275px;
-  justify-self: end;
-}
-
-.tw-row-justify {
-  gap: 30px;
-  width: 1050px;
-}
-
-.tw-col-3 {
-  flex-basis: 600px;
-}
-
-.tw-col-4 {
-  flex-basis: 350px;
-}
 .account-box .account-name {
   max-width: 150px;
   white-space: nowrap;
@@ -55,6 +18,7 @@
 
 html {
   overflow: hidden;
+  position: relative;
 }
 body {
   line-height: 1;
@@ -74,17 +38,43 @@ body {
 a {
   transition: all 0.3s;
   outline: none;
+  filter: brightness(1);
 }
 a:hover,
 button:hover {
-  filter: brightness(0.95);
+  filter: brightness(0.85);
 }
 
-a:active,
+/* a:active,
 button:active,
 a:focus,
 button:focus {
   filter: brightness(0.85);
+} */
+
+/* Twitter Container */
+.tw-row {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.tw-row-justify {
+  gap: 30px;
+}
+.tw-col-1 {
+  flex-basis: 31.13%;
+}
+
+.tw-col-2 {
+  flex-basis: calc(100% - 31.13%);
+}
+.tw-col-3 {
+  flex-basis: 600px;
+}
+
+.tw-col-4 {
+  flex-basis: 350px;
 }
 
 .tw-btn {
@@ -153,6 +143,9 @@ button:focus {
   background-color: rgba(231, 233, 234, 0.15);
 }
 
+.tw-lg-hide {
+  display: none;
+}
 /******************
  GENERAL UTILITIES
 *****************/
@@ -198,6 +191,9 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  justify-self: end;
+  width: 275px;
+  margin-left: auto;
 }
 
 .main-nav {
@@ -224,6 +220,10 @@ p {
 
 .post-box {
   margin: 8px 0 4px 0;
+}
+
+.post-box a i {
+  font-size: 22px;
 }
 
 .section-account {
@@ -279,6 +279,10 @@ p {
 }
 
 /* Main Tabs */
+
+.tw-sm-header {
+  display: none;
+}
 .main-tab {
   border-bottom: 1px solid #2f3336;
   display: flex;
@@ -466,6 +470,17 @@ p {
 }
 .article-content-container {
   flex-grow: 1;
+  transition: all 0.4s;
+}
+
+.content-img-container img,
+.content-img-container video {
+  transition: all 0.3s;
+}
+.content-img-container img:hover,
+.content-img-container video:hover {
+  cursor: pointer;
+  filter: brightness(0.8);
 }
 .article-header {
   display: flex;
@@ -679,6 +694,10 @@ a.article-time:hover .time {
 
   outline: 1px solid transparent;
   transition: all 0.3s;
+}
+.search-input::placeholder,
+.search-form::-moz-placeholder {
+  color: #71767b;
 }
 
 .search-icon {
