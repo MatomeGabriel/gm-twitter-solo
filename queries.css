@@ -207,4 +207,8 @@
   .article-time {
     display: none;
   }
+
+  .post-articles {
+    margin-bottom: 10vh;
+  }
 }
