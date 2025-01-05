@@ -19,17 +19,19 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <link rel="stylesheet" href="ignore.css" />
 
     <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="ignore.css" /> -->
+    <link rel="stylesheet" href="queries.css" />
 
     <title>Home/X</title>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-3 order-last order-sm-first">
+    <div class="tw-container">
+      <div class="tw-row">
+        <div class="tw-col-1">
           <!-- SIDEBAR -->
+
           <header class="header px-2">
             <section class="main-menu">
               <nav class="main-nav">
@@ -40,60 +42,63 @@
                     <i class="bi bi-twitter-x"></i>
                   </a>
                 </div>
-                <ul class="menu">
+                <ul class="menu tw-sm">
                   <!-- Home -->
                   <li class="menu-item">
                     <a href="" class="tw-btn tw-btn-md-outline active">
                       <i class="bi bi-house-door-fill"></i>
-                      <span class="menu-label">Home</span>
+                      <span class="menu-label tw-sm-hide">Home</span>
                     </a>
                   </li>
                   <!-- Explore -->
                   <li class="menu-item">
                     <a href="" class="tw-btn tw-btn-md-outline">
                       <i class="bi bi-search"></i>
-                      <span class="menu-label">Explore</span>
+                      <span class="menu-label tw-sm-hide">Explore</span>
                     </a>
                   </li>
                   <!-- Notifications -->
                   <li class="menu-item">
                     <a href="" class="tw-btn tw-btn-md-outline">
                       <i class="bi bi-bell"></i>
-                      <span class="menu-label">Notifications</span>
+                      <span class="menu-label tw-sm-hide">Notifications</span>
                     </a>
                   </li>
                   <!-- Messages -->
                   <li class="menu-item">
                     <a href="" class="tw-btn tw-btn-md-outline">
                       <i class="bi bi-envelope"></i>
-                      <span class="menu-label">Messages</span>
+                      <span class="menu-label tw-sm-hide">Messages</span>
                     </a>
                   </li>
                   <!-- Grok -->
                   <li class="menu-item">
                     <a href="" class="tw-btn tw-btn-md-outline">
                       <i class="bi bi-slash-square"></i>
-                      <span class="menu-label">Grok</span>
+                      <span class="menu-label tw-sm-hide">Grok</span>
                     </a>
                   </li>
                   <!-- Profile -->
                   <li class="menu-item">
                     <a href="" class="tw-btn tw-btn-md-outline">
                       <i class="bi bi-person"></i>
-                      <span class="menu-label">Profile</span>
+                      <span class="menu-label tw-sm-hide">Profile</span>
                     </a>
                   </li>
                   <!-- More -->
                   <li class="menu-item">
                     <a href="" class="tw-btn tw-btn-md-outline">
                       <i class="bi bi-three-dots"></i>
-                      <span class="menu-label">More</span>
+                      <span class="menu-label tw-sm-hide">More</span>
                     </a>
                   </li>
                 </ul>
               </nav>
-              <div class="post-box">
-                <a href="#" class="tw-btn tw-btn-lg">Post</a>
+              <div class="post-box tw-sm">
+                <a href="#" class="tw-btn tw-btn-lg">
+                  <span class="tw-sm-hide">Post</span>
+                  <i class="bi bi-feather tw-lg-hide"></i>
+                </a>
               </div>
             </section>
             <section class="section-account">
@@ -105,22 +110,51 @@
                       src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt="" />
                   </a>
-                  <span class="account-info">
+                  <span class="account-info tw-sm-hide">
                     <p class="account-name">The Only Code Insiders</p>
                     <p class="account-username">@codeinsiders</p>
                   </span>
-                  <i class="bi bi-three-dots"></i>
+                  <i class="bi bi-three-dots tw-sm-hide"></i>
                 </div>
               </button>
             </section>
           </header>
         </div>
-        <div class="col-12 col-sm-9 px">
+
+        <div class="tw-col-2">
           <!-- HEADER -->
           <main class="main">
-            <div class="row">
-              <div class="col-7">
+            <div class="tw-row tw-row-justify">
+              <div class="tw-col-3">
                 <div class="main-content">
+                  <div class="tw-sm-header">
+                    <button class="tw-btn tw-btn-account">
+                      <div class="account-box">
+                        <a href="" class="account-link">
+                          <img
+                            class="account-img ut-rounded"
+                            src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="" />
+                        </a>
+                        <span class="account-info tw-sm-hide">
+                          <p class="account-name">The Only Code Insiders</p>
+                          <p class="account-username">@codeinsiders</p>
+                        </span>
+                        <i class="bi bi-three-dots tw-sm-hide"></i>
+                      </div>
+                    </button>
+                    <div class="logo">
+                      <a
+                        href=""
+                        class="tw-btn fs-4 rounded-circle text-white tw-btn-logo">
+                        <i class="bi bi-twitter-x"></i>
+                      </a>
+                    </div>
+
+                    <div class="try-premium">
+                      <a href="#" class="tw-btn tw-btn-sm">Try Premium</a>
+                    </div>
+                  </div>
                   <header class="main-tab">
                     <a href="" class="tw-btn tw-btn-tab tw-btn-tab-active"
                       >For you</a
@@ -508,7 +542,7 @@
                   </section>
                 </div>
               </div>
-              <div class="col-5">
+              <div class="tw-col-4">
                 <aside class="side-content">
                   <section class="section-form">
                     <form class="search-form" action="">
