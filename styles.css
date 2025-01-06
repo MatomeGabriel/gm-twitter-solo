@@ -143,6 +143,18 @@ button:hover {
   background-color: rgba(231, 233, 234, 0.15);
 }
 
+.account-link {
+  text-decoration: none;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+}
+.account-link:hover .account-img {
+  filter: brightness(80%);
+}
 .tw-lg-hide {
   display: none;
 }
@@ -355,23 +367,10 @@ p {
   flex-grow: 1;
 }
 
-.account-link {
-  text-decoration: none;
-  display: flex;
-  width: 44px;
-  height: 44px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 999px;
-}
 .account-img {
   width: 44px;
   height: 44px;
   transition: 0.3s all;
-}
-
-.account-link:hover .account-img {
-  filter: brightness(80%);
 }
 
 /* Post Form */
