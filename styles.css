@@ -45,12 +45,12 @@ button:hover {
   filter: brightness(0.85);
 }
 
-/* a:active,
-button:active,
-a:focus,
-button:focus {
-  filter: brightness(0.85);
-} */
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3);
+}
 
 /* Twitter Container */
 .tw-row {
@@ -166,6 +166,10 @@ button:focus {
 }
 .ut-bordered {
   border-radius: 4px;
+}
+
+.ut-mt-sm {
+  margin-top: 12px !important;
 }
 
 .secondary-heading {
@@ -358,6 +362,7 @@ p {
   height: 44px;
   justify-content: center;
   align-items: center;
+  border-radius: 999px;
 }
 .account-img {
   width: 44px;
@@ -539,6 +544,7 @@ a.article-time:hover .time {
   z-index: -1;
   border-radius: 999px;
   transition: all 0.3s;
+  border: 1px solid transparent;
 }
 
 .btn-more:hover {
@@ -547,6 +553,14 @@ a.article-time:hover .time {
 
 .btn-more:hover.btn-more::after {
   background-color: rgba(29, 156, 240, 0.15);
+}
+
+.btn-more:focus {
+  box-shadow: none;
+}
+
+.btn-more:focus::after {
+  border: 1px solid #1d9bf0;
 }
 
 /* Article footer */
@@ -732,6 +746,7 @@ a.article-time:hover .time {
 
 .search-input:focus {
   outline: none;
+  box-shadow: none;
 }
 
 .search-input:focus ~ .search-icon i {

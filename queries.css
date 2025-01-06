@@ -71,7 +71,7 @@
   }
   /* HEADER */
 
-  .logo {
+  .logo a {
     width: 51px;
     height: 51px;
     display: flex;
@@ -86,6 +86,20 @@
   .post-box a {
     width: 51px;
     height: 51px;
+  }
+
+  .account-box {
+    width: auto;
+  }
+
+  .tw-btn-account {
+    width: auto;
+  }
+
+  .section-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -206,5 +220,9 @@
 
   .article-time {
     display: none;
+  }
+
+  .post-articles {
+    margin-bottom: 10vh;
   }
 }
