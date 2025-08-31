@@ -54,5 +54,5 @@ This project focuses on layout design, responsiveness, and replicating the visua
 ---
 
 ## 📬 Connect
-Let's connect on [LinkedIn]([https://www.linkedin.com](https://www.linkedin.com/in/matome-montja-538b55127/)) or [TikTok]([https://www.tiktok.com](https://www.tiktok.com/@gabsinto.dev))!
+Let's connect on [LinkedIn](https://www.linkedin.com/in/matome-montja-538b55127/) or [TikTok](https://www.tiktok.com/@gabsinto.dev)
 
